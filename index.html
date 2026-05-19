@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+  <title>PAIN DU BOIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Noto+Serif+JP:wght@300;400;500&family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<!-- HEADER
+=========================================== -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a class="header__logo" href="#">
+      <span class="header__logo-en">PAIN DU BOIS</span>
+      <span class="header__logo-ja">パン・デュ・ボワ</span>
+    </a>
+    <nav class="header__nav" id="nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item"><a class="header__nav-link" href="#about">ABOUT</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#story">STORY</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#menu">MENU</a></li>
+        <li class="header__nav-item"><a class="header__nav-link" href="#access">ACCESS</a></li>
+      </ul>
+    </nav>
+
+    <!-- ハンバーガーボタン — モバイルのみ表示 -->
+    <button class="header__hamburger" id="hamburger" aria-label="メニュー" aria-expanded="false">
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+      <span class="header__hamburger-bar"></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO
+  =========================================== -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image:url('img/1.jpg');"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Boulangerie de Campagne</p>
+      <h1 class="hero__title">石窯で焼く、<br>田舎のハードパン。</h1>
+      <p class="hero__sub">小麦と水と塩と酵母だけで。</p>
+    </div>
+  </section>
+
+
+  <!-- ABOUT
+  =========================================== -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <span class="about__eyebrow">— ABOUT —</span>
+      <h2 class="about__heading">パンと向き合う、静かな場所から。</h2>
+      <div class="about__rule"></div>
+      <p class="about__body">北海道の山裾に小さな窯を築き、毎朝ハードパンだけを焼いています。余計なものは加えない。小麦と水と塩と酵母だけで、焼きたての一本をお届けします。売り切れ次第閉店。それだけが、ここのルールです。</p>
+    </div>
+  </section>
+
+
+  <!-- STORY
+  =========================================== -->
+  <section class="story" id="story">
+    <div class="story__inner">
+      <div class="story__head">
+        <span class="story__eyebrow">— STORY —</span>
+        <h2 class="story__heading">窯の前で過ごす、<br>毎朝のこと。</h2>
+      </div>
+
+      <div class="story__timeline">
+        <!-- 左: 画像, 右: テキスト -->
+        <div class="story__item story__item--left">
+          <div class="story__item-img-wrap">
+            <img class="story__item-img" src="img/2.jpg" alt="小麦の選択">
+          </div>
+          <div class="story__item-dot"></div>
+          <div class="story__item-text">
+            <span class="story__item-num">01</span>
+            <h3 class="story__item-title">小麦を選ぶ</h3>
+            <p class="story__item-body">国産の小麦粉を中心に、その年の収穫状況を見ながら厳選。粉の個性を引き出すブレンドを毎年考えます。</p>
+          </div>
+        </div>
+
+        <!-- 右: 画像, 左: テキスト -->
+        <div class="story__item story__item--right">
+          <div class="story__item-img-wrap">
+            <img class="story__item-img" src="img/3.jpg" alt="石窯に火を入れる">
+          </div>
+          <div class="story__item-dot"></div>
+          <div class="story__item-text">
+            <span class="story__item-num">02</span>
+            <h3 class="story__item-title">石窯に火を入れる</h3>
+            <p class="story__item-body">薪で炊く石窯は、朝の5時から温め始めます。安定した高温を保つことが、ハードパンの美しいクラストを生みます。</p>
+          </div>
+        </div>
+
+        <!-- 左: 画像, 右: テキスト -->
+        <div class="story__item story__item--left">
+          <div class="story__item-img-wrap">
+            <img class="story__item-img" src="img/4.jpg" alt="成形">
+          </div>
+          <div class="story__item-dot"></div>
+          <div class="story__item-text">
+            <span class="story__item-num">03</span>
+            <h3 class="story__item-title">生地を成形する</h3>
+            <p class="story__item-body">発酵させた生地は、手で丁寧に成形します。機械に頼らず、生地の状態を感じながらひとつひとつ形を整えます。</p>
+          </div>
+        </div>
+
+        <!-- 右: 画像, 左: テキスト -->
+        <div class="story__item story__item--right">
+          <div class="story__item-img-wrap">
+            <img class="story__item-img" src="img/5.jpg" alt="焼き上がり">
+          </div>
+          <div class="story__item-dot"></div>
+          <div class="story__item-text">
+            <span class="story__item-num">04</span>
+            <h3 class="story__item-title">焼き上がりを待つ</h3>
+            <p class="story__item-body">窯に入れたら、あとは火に任せます。焼き色と香りを頼りに、最適な瞬間に取り出す。それが窯焼きパンの醍醐味です。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PANORAMA
+  =========================================== -->
+  <div class="panorama">
+    <div class="panorama__bg" style="background-image:url('img/6.jpg');"></div>
+    <div class="panorama__overlay"></div>
+    <p class="panorama__text">毎朝、窯に火を入れる。それだけを続けてきた。</p>
+  </div>
+
+
+  <!-- MENU
+  =========================================== -->
+  <section class="menu" id="menu">
+    <div class="menu__inner">
+      <div class="menu__head">
+        <span class="menu__eyebrow">— MENU —</span>
+        <h2 class="menu__heading">ハードパンのみ、全８種。</h2>
+      </div>
+      <div class="menu__grid">
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/1.jpg" alt="カンパーニュ">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">カンパーニュ</h3>
+            <p class="menu__item-desc">素朴な田舎パン。外皮は厚く、中はしっとり。</p>
+            <span class="menu__item-price">¥ 480</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/130.jpg" alt="バゲット">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">バゲット</h3>
+            <p class="menu__item-desc">パリッとした皮と、もちもちのクラム。</p>
+            <span class="menu__item-price">¥ 380</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/13.jpg" alt="リュスティック">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">リュスティック</h3>
+            <p class="menu__item-desc">不揃いな形が愛らしい、気取らないパン。</p>
+            <span class="menu__item-price">¥ 420</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/14.jpg" alt="セーグル">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">セーグル</h3>
+            <p class="menu__item-desc">ライ麦の酸味と旨みが凝縮した一斤。</p>
+            <span class="menu__item-price">¥ 500</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/11.jpg" alt="セサミフランス">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">セサミフランス</h3>
+            <p class="menu__item-desc">噛むほどにゴマの香ばしさと小麦の風味が広がるパン。</p>
+            <span class="menu__item-price">¥ 460</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/9.jpg" alt="フォカッチャ">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">フォカッチャ</h3>
+            <p class="menu__item-desc">オリーブオイルを染み込ませて焼き、表面はカリッと中はもっちり。</p>
+            <span class="menu__item-price">¥ 350</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/7.jpg" alt="パン・ロデフ">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">パン・ロデフ</h3>
+            <p class="menu__item-desc">水分多めでクラムが大きく開いた、モダンなパン。</p>
+            <span class="menu__item-price">¥ 540</span>
+          </div>
+        </article>
+        <article class="menu__item">
+          <div class="menu__item-img-wrap">
+            <img class="menu__item-img" src="img/8.jpg" alt="タバティエール">
+          </div>
+          <div class="menu__item-body">
+            <h3 class="menu__item-name">タバティエール</h3>
+            <p class="menu__item-desc">蓋を開けるような切り込みが特徴的な丸パン。</p>
+            <span class="menu__item-price">¥ 400</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ACCESS
+  =========================================== -->
+  <search class="access" id="access">
+    <div class="access__inner">
+      <div class="access__map">
+        <div class="access__map-placeholder">MAP</div>
+      </div>
+      <div class="access__info">
+        <span class="access__eyebrow">— ACCESS —</span>
+        <h2 class="access__heading">店舗情報</h2>
+        <dl class="access__detail">
+          <dt class="access__detail-term">住所</dt>
+          <dd class="access__detail-desc">北海道〇〇郡〇〇村〇〇 123</dd>
+          <dt class="access__detail-term">営業時間</dt>
+          <dd class="access__detail-desc">8:00 – 17:00<br><small>（売り切れ次第終了）</small></dd>
+          <dt class="access__detail-term">定休日</dt>
+          <dd class="access__detail-desc">月曜・火曜</dd>
+          <dt class="access__detail-term">駐車場</dt>
+          <dd class="access__detail-desc">あり（10台）</dd>
+        </dl>
+      </div>
+    </div>
+  </search>
+
+</main>
+
+<!-- FOOTER
+=========================================== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <p class="footer__logo">PAIN DU BOIS</p>
+    <p class="footer__tagline">石窯で焼く、田舎のハードパン。</p>
+    <p class="footer__copy">&copy; 2024 PAIN DU BOIS</p>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
