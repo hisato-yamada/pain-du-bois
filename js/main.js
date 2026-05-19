@@ -36,34 +36,6 @@
   }
 
   /* スクロールアニメーション: タイムラインアイテム */
-  var items = document.querySelectorAll('.story__item');
-
-  if ('IntersectionObserver' in window && items.length) {
-    var observer = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('story__item--visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: .15 });
-
-    items.forEach(function (item) {
-      item.style.opacity = '0';
-      item.style.transform = 'translateY(24px)';
-      item.style.transition = 'opacity .6s ease, transform .6s ease';
-      observer.observe(item);
-    });
-
-    document.addEventListener('animationframeready', function () {});
-  }
-
-  /* ビジブル状態の適用 */
-  document.querySelectorAll('.story__item').forEach(function (el) {
-    el.addEventListener('transitionend', function () {});
-  });
-
-  /* IntersectionObserver コールバック内でスタイル直接適用 */
   if ('IntersectionObserver' in window) {
     var revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -76,6 +48,9 @@
     }, { threshold: .12 });
 
     document.querySelectorAll('.story__item').forEach(function (el) {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      el.style.transition = 'opacity .6s ease, transform .6s ease';
       revealObserver.observe(el);
     });
   }
